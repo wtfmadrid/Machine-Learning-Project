@@ -14,23 +14,23 @@ Cluster Insights: Summary of the most frequent attributes within each cluster.
 
 The dataset contains the following columns:
 
-buying: Buying price (categorical)
-maint: Maintenance cost (categorical)
-doors: Number of doors (categorical)
-persons: Number of persons it can accommodate (categorical)
-lug_boot: Size of luggage boot (categorical)
-safety: Safety level (categorical)
-class: Overall car acceptability (excluded from clustering)
+buying: Buying price (categorical) /
+maint: Maintenance cost (categorical) /
+doors: Number of doors (categorical) /
+persons: Number of persons it can accommodate (categorical) /
+lug_boot: Size of luggage boot (categorical) /
+safety: Safety level (categorical) /
+class: Overall car acceptability (excluded from clustering) /
 
 # Requirements
 
 To run the project, the following libraries are required:
 
-Python 3.6+
-pandas
-matplotlib
-seaborn
-scikit-learn
+Python 3.6+ /
+pandas /
+matplotlib /
+seaborn /
+scikit-learn /
 kmodes
 
 # Steps to Reproduce
@@ -39,16 +39,20 @@ Dataset Preparation:
 
 Load the dataset car.data into a pandas DataFrame.
 Ensure the dataset contains all the required columns as described above.
+
 K-Modes Clustering:
 
 Use the KModes module from kmodes to initialize and fit the clustering model.
 Specify the number of clusters (n_clusters) and other hyperparameters.
+
 Cluster Assignment:
 
 Predict the cluster labels for each data point and append them to the dataset.
+
 Visualization:
 
 Use Seaborn's countplot to visualize the distribution of instances across clusters.
+
 Cluster Insights:
 
 Analyze the cluster centroids to understand the common features of each cluster.
